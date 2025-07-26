@@ -1,0 +1,59 @@
+# 빌드 출력
+build/
+bin/
+lib/
+obj/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# CMake 생성 파일
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 데이터 파일
+data/logs/*.log
+data/reports/*.pdf
+data/reports/*.html
+data/analysis/*.csv
+data/analysis/*.xlsx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.temp
+*.bak
+
+# 로그 파일
+*.log
+
+# 설정 파일 (개인 설정)
+config/local_config.json
+config/secrets.json

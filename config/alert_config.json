@@ -1,0 +1,95 @@
+{
+  "alert_levels": {
+    "info": {
+      "color": "blue",
+      "priority": 1,
+      "notification_enabled": false
+    },
+    "warning": {
+      "color": "yellow",
+      "priority": 2,
+      "notification_enabled": true
+    },
+    "critical": {
+      "color": "red",
+      "priority": 3,
+      "notification_enabled": true,
+      "auto_escalation": true
+    }
+  },
+  "thresholds": {
+    "power_system": {
+      "battery_level": {
+        "warning": 0.3,
+        "critical": 0.15
+      },
+      "solar_panel_voltage": {
+        "warning_low": 12.0,
+        "warning_high": 28.0,
+        "critical_low": 10.0,
+        "critical_high": 30.0
+      },
+      "power_consumption": {
+        "warning": 180,
+        "critical": 200
+      }
+    },
+    "thermal_system": {
+      "temperature": {
+        "warning_low": -15,
+        "warning_high": 55,
+        "critical_low": -25,
+        "critical_high": 65
+      },
+      "cooling_system": {
+        "warning": "inactive",
+        "critical": "failed"
+      }
+    },
+    "attitude_system": {
+      "angular_velocity": {
+        "warning": 4.0,
+        "critical": 5.5
+      },
+      "attitude_error": {
+        "warning": 0.5,
+        "critical": 1.0
+      },
+      "reaction_wheel_speed": {
+        "warning": 5500,
+        "critical": 6000
+      }
+    },
+    "communication_system": {
+      "signal_strength": {
+        "warning": -110,
+        "critical": -115
+      },
+      "data_rate": {
+        "warning": 50,
+        "critical": 25
+      },
+      "antenna_status": {
+        "warning": "degraded",
+        "critical": "failed"
+      }
+    }
+  },
+  "notification": {
+    "email": {
+      "enabled": false,
+      "smtp_server": "smtp.gmail.com",
+      "smtp_port": 587,
+      "recipients": []
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": "",
+      "channel": "#satellite-alerts"
+    },
+    "console": {
+      "enabled": true,
+      "timestamp_format": "%Y-%m-%d %H:%M:%S"
+    }
+  }
+} 

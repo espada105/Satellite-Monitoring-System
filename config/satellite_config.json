@@ -1,0 +1,44 @@
+{
+  "satellite_info": {
+    "name": "TestSat-001",
+    "mission_type": "Earth Observation",
+    "launch_date": "2024-01-01",
+    "orbit_type": "LEO",
+    "altitude_km": 500
+  },
+  "subsystems": {
+    "power_system": {
+      "battery_capacity_wh": 1000,
+      "solar_panel_efficiency": 0.25,
+      "low_battery_threshold": 0.2,
+      "critical_battery_threshold": 0.1,
+      "max_power_consumption_w": 200
+    },
+    "thermal_system": {
+      "min_operating_temp_c": -20,
+      "max_operating_temp_c": 60,
+      "critical_temp_high_c": 70,
+      "critical_temp_low_c": -30,
+      "cooling_system_enabled": true
+    },
+    "attitude_system": {
+      "max_angular_velocity_deg_s": 5.0,
+      "attitude_control_precision_deg": 0.1,
+      "reaction_wheel_max_speed_rpm": 6000,
+      "gyroscope_enabled": true
+    },
+    "communication_system": {
+      "downlink_frequency_mhz": 2200,
+      "uplink_frequency_mhz": 2000,
+      "min_signal_strength_db": -120,
+      "max_data_rate_mbps": 100,
+      "antenna_pointing_enabled": true
+    }
+  },
+  "monitoring": {
+    "update_interval_ms": 1000,
+    "log_interval_ms": 5000,
+    "alert_check_interval_ms": 2000,
+    "data_retention_days": 30
+  }
+} 

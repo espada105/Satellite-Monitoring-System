@@ -1,0 +1,32 @@
+{
+  "data_logging": {
+    "enabled": true,
+    "log_file_path": "data/logs/system_logs/satellite_status.csv",
+    "buffer_size": 1000,
+    "flush_interval_ms": 5000,
+    "compression_enabled": false
+  },
+  "alert_system": {
+    "enabled": true,
+    "alert_file_path": "data/logs/alert_logs/alerts.json",
+    "max_alerts_per_hour": 100,
+    "alert_retention_days": 7
+  },
+  "status_reporting": {
+    "enabled": true,
+    "report_interval_minutes": 60,
+    "report_file_path": "data/logs/status_reports/",
+    "include_trends": true,
+    "include_alerts": true
+  },
+  "performance": {
+    "max_cpu_usage_percent": 80,
+    "max_memory_usage_mb": 512,
+    "max_disk_usage_percent": 90
+  },
+  "network": {
+    "timeout_seconds": 30,
+    "retry_attempts": 3,
+    "connection_pool_size": 10
+  }
+} 
